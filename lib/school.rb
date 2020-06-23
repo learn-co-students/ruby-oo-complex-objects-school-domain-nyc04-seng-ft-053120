@@ -1,4 +1,3 @@
-require 'pry'
 class School
     attr_accessor :roster
 
@@ -16,8 +15,8 @@ class School
         @roster[grade] << student 
     end 
 
-    def grade(number)
-        @roster[number]
+    def grade(grade)
+        @roster[grade]
     end
 
     def sort
