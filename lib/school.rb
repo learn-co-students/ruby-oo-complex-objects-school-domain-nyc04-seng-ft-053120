@@ -21,11 +21,11 @@ class School
     end
   
     def sort
-      sorted_hash = {}
+      result = {}
       @roster.sort.each do |grade, names|
-        sorted_hash[grade] = (names.sort)
+        result[grade] = names.sort
       end
-      sorted_hash
+      result
     end
 end
 # school = School.new("Bayside High School")
